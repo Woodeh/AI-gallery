@@ -1,0 +1,118 @@
+:root {
+    --slow: 0s;
+  }
+
+  
+  .waviy {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 60px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+    
+  }
+  @keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
+  
+  body {
+    font-family: sans-serif;
+    background: #000;
+    color: #fff;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  .grid {
+    display: flex;
+    justify-content: center;
+    gap: 3vmin;
+    transition: 0.3s;
+  }
+  
+  .slider {
+    height: 100vh;
+    overflow: hidden;
+  }
+  .slider-items {
+    display: flex;
+    flex-direction: column;
+    gap: 3vmin;
+    padding-top: 3vmin;
+    animation-name: scroll;
+    animation-duration: 30s;
+    animation-duration: calc(30s + var(--slow));
+    animation-delay: var(--delay);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  .item {
+    position:relative;
+    background:#020202;
+    transition: all .3s ease-in-out;
+  }
+  .item a{
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+  }
+  .item:hover{
+    transform: scale(0.9);
+  }
+  @keyframes scroll {
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  @media (hover: hover) {
+    .slider:hover .slider-items {
+      animation-play-state: paused;
+    }
+  }
+  
+  
+  @media (max-width: 600px) {
+    .hidden-m {
+      display: none;
+    }
+  }
+ 
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    cursor: zoom-out;
+  }
