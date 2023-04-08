@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <!-- <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/moded-style.css"> -->
+    <link rel="stylesheet" href="/src/gallery.css">
+    <link rel="stylesheet" href="/src/about.css">
+    <link rel="stylesheet" href="/src/moded-style.css">
+</head>
+<body>
+    <header>
+        <nav>
+              <input type="checkbox" name="toggle-nav">
+            <label for="toggle-nav">
+              <span class="menu-icon"></span>
+            </label>      
+            <section class="side-nav-panel">
+                      <section class="nav-profile">
+                          <img src="/src/pictures/example-profile.jpg" alt="">
+                          <section class="profile-info">
+                              <h2>WoodyTHPS</h2>
+                              <p>This is my little project where you can learn a little more about artificial intelligence</p>
+                          </section>
+                      </section>
+              <ul class="top-nav">
+                          <li><a href="/src/index.html">Home</a></li>
+                <li class="parent-item"><a href="#">About</a>
+                  <ul class="submenu">
+                    <li><a href="#">Leif</a></li>
+                    <li><a href="" target="_blank">Test</a></li>
+                  </ul>
+                </li>
+                <li class="parent-item"><a href="#">Test</a>
+                  <ul class="submenu">
+                    <li><a href="#">Test</a></li>
+                    <li><a href="#">Test</a></li>
+                    <li><a href="#">Test</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+                      <section class="social-nav social-nav__aside">
+                          <a href="#"><i class="fab fa-codepen"></i></a>
+                          <a href="#"><i class="fab fa-github"></i></a>
+                          <a href="#"><i class="fab fa-linkedin"></i></a>
+                          <a href="#"><i class="far fa-envelope"></i></a>
+                          
+                      </section>
+              
+              <!-- 		DarkModeJS Toggle Button		 -->
+              <button class="dark-mode-button" aria-label="dark mode toggle">
+                <span aria-hidden="true" class="dark-toggle">
+                    <span class="DTspan"></span>
+                </span>
+              </button>
+              
+            </section>
+        </nav>
+        <a href="#" class="header-logo"><img src="" alt="Logo"></a>
+        <section class="social-nav social-nav__header">
+              <a href="#"><i class="fab fa-codepen"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="far fa-envelope"></i></a>
+           </section>
+      </header>
+
+
+
+      <div class="gallery">
+        <div class="row">
+          <div class="column">
+            <img src="/src/pictures/dragon.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="/src/pictures/hell.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="/src/pictures/japan-girl-river.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="/src/pictures/mage-pvp.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="/src/pictures/mexico.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="/src/pictures/mustang.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="/src/pictures/plague-doctor.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="/src/pictures/portal.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="/src/pictures/samurai-alliens.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="/src/pictures/spider-man.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="/src/pictures/samurai-portret.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="/src/pictures/vampire-killer.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow">
+          </div>
+        </div>
+      
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+      
+            <div class="mySlides">
+              <img src="/src/pictures/dragon.jpg">
+            </div>
+      
+            <div class="mySlides">
+              <img src="/src/pictures/hell.jpg">
+            </div>
+      
+            <div class="mySlides">
+              <img src="/src/pictures/japan-girl-river.jpg">
+            </div>
+                  
+            <div class="mySlides">
+              <img src="/src/pictures/mage-pvp.jpg">
+            </div>
+      
+            <div class="mySlides">
+              <img src="/src/pictures/mexico.jpg">
+            </div>
+      
+            <div class="mySlides">
+              <img src="/src/pictures/mustang.jpg">
+            </div>
+                  
+            <div class="mySlides">
+              <img src="/src/pictures/plague-doctor.jpg">
+            </div>
+      
+            <div class="mySlides">
+              <img src="/src/pictures/portal.jpg">
+            </div>
+      
+            <div class="mySlides">
+              <img src="/src/pictures/samurai-alliens.jpg">
+            </div>
+
+            <div class="mySlides">
+              <img src="/src/pictures/spider-man.jpg">
+            </div>
+
+            <div class="mySlides">
+              <img src="/src/pictures/samurai-portret.jpg">
+            </div>
+
+            <div class="mySlides">
+              <img src="/src/pictures/vampire-killer.jpg">
+            </div>
+      
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          </div>
+        </div>
+      </div>
+      
+
+      <script src="/src/script.js"></script>
+</body>
+</html>

@@ -356,7 +356,7 @@ body.dark-mode header a {
 }
 body.dark-mode nav .side-nav-panel {
   background-color: #07080a;
-  box-shadow: 1px 0 5px rgba(252, 252, 252, 0.1), 1px 0 3px rgba(252, 252, 252, 0.2);
+  /* box-shadow: 1px 0 5px rgba(252, 252, 252, 0.1), 1px 0 3px rgba(252, 252, 252, 0.2); */
 }
 body.dark-mode input[name=toggle-nav]:hover:checked + label[for=toggle-nav] .menu-icon::before,
 body.dark-mode input[name=toggle-nav]:hover:checked + label[for=toggle-nav] .menu-icon::after,
