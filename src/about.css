@@ -1,0 +1,46 @@
+
+/* выравниваем текст */
+
+
+h1 {
+    padding-top: 88px;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+ul {
+  
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  font-family: 'Cardo', serif;
+}
+
+.paragraph {
+    font-family: 'Cardo', serif;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+
+.content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.subtitle {
+    font-size: 24px;
+  font-weight: bold;
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 2;
+}
+
+.subtitle-text {
+    padding-bottom: 20px;
+}

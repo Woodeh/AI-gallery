@@ -6,42 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/moded-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-    <div class="waviy">
-        <span style="--i:1">a</span>
-        <span style="--i:2">i</span>
-        <span style="--i:3"> </span>
-        <span style="--i:4">g</span>
-        <span style="--i:5">a</span>
-        <span style="--i:6">l</span>
-        <span style="--i:7">l</span>
-        <span style="--i:8">e</span>
-        <span style="--i:9">r</span>
-        <span style="--i:10">y</span>
-       </div>
-</header>
-
+  <header>
+    <nav>
+          <input type="checkbox" name="toggle-nav">
+        <label for="toggle-nav">
+          <span class="menu-icon"></span>
+        </label>      
+        <section class="side-nav-panel">
+                  <section class="nav-profile">
+                      <img src="/src/pictures/example-profile.jpg" alt="">
+                      <section class="profile-info">
+                          <h2>WoodyTHPS</h2>
+                          <p>This is my little project where you can learn a little more about artificial intelligence</p>
+                      </section>
+                  </section>
+          <ul class="top-nav">
+                      <li><a href="">Home</a></li>
+            <li class="parent-item"><a href="/src/pages/about.html">About</a>
+              <ul class="submenu">
+                <li><a href="#">Leif</a></li>
+                <li><a href="" target="_blank">Test</a></li>
+              </ul>
+            </li>
+            <li class="parent-item"><a href="#">Test</a>
+              <ul class="submenu">
+                <li><a href="#">Test</a></li>
+                <li><a href="#">Test</a></li>
+                <li><a href="#">Test</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+                  <section class="social-nav social-nav__aside">
+                      <a href="#"><i class="fab fa-codepen"></i></a>
+                      <a href="#"><i class="fab fa-github"></i></a>
+                      <a href="#"><i class="fab fa-linkedin"></i></a>
+                      <a href="#"><i class="far fa-envelope"></i></a>
+                      
+                  </section>
+          
+          <!-- 		DarkModeJS Toggle Button		 -->
+          <button class="dark-mode-button" aria-label="dark mode toggle">
+            <span aria-hidden="true" class="dark-toggle">
+                <span class="DTspan"></span>
+            </span>
+          </button>
+          
+        </section>
+    </nav>
+    <a href="#" class="header-logo"><img src="" alt="Logo"></a>
+    <section class="social-nav social-nav__header">
+          <a href="#"><i class="fab fa-codepen"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="far fa-envelope"></i></a>
+       </section>
+  </header>
+  <main>
+  </main>
 
     <div class="grid">
         <div class="slider">
           <div class="slider-items">
             <div class="item">
               <img src="/src/pictures/japan-girl-river.jpg" alt="" width="450" height="450">
-              <h4>Title</h4>
             </div>
             <div class="item">
               <img src="/src/pictures/mage-pvp.jpg" alt="" width="450" height="450">
-              <h4>Title</h4>
             </div>
             <div class="item">
               <img src="/src/pictures/plague-doctor.jpg" alt="" width="450" height="450">
-              <h4>Title</h4>
             </div>
             <div class="item">
               <img src="/src/pictures/samurai-alliens.jpg" alt="" width="450" height="450">
-              <h4>Title</h4>
             </div>
           </div>
         </div>
@@ -49,39 +92,31 @@
           <div class="slider-items">
             <div class="item">
               <img src="/src/pictures/samurai-portret.jpg" alt="" width="450" height="450">
-              <h4>Title</h4>
             </div>
             <div class="item">
                 <img src="/src/pictures/vampire-killer.jpg" alt="" width="450" height="450">
-                <h4>Title</h4>
             </div>
             <div class="item">
                 <img src="/src/pictures/mexico.jpg" alt="" width="450" height="450">
-                <h4>Title</h4>
             </div>
             <div class="item">
-                <img src="/src/pictures/samurai-portret.jpg" alt="" width="450" height="450">
-                <h4>Title</h4>
+                <img src="/src/pictures/portal.jpg" alt="" width="450" height="450">
             </div>
           </div>
           </div>
         <div class="slider hidden-m" style="--delay:-20s;--slow:-2s">
           <div class="slider-items">
             <div class="item">
-              <img src="/src/pictures/japan-girl-river.jpg" alt="" width="450" height="450">
-              <h4>Title</h4>
+              <img src="/src/pictures/mustang.jpg" alt="" width="450" height="450">
             </div>
             <div class="item">
-              <img src="/src/pictures/plague-doctor.jpg" alt="" width="450" height="450">
-              <h4>Title</h4>
+              <img src="/src/pictures/dragon.jpg" alt="" width="450" height="450">
             </div>
             <div class="item">
-              <img src="/src/pictures/japan-girl-river.jpg" width="450" height="450">
-              <h4>Title</h4>
+              <img src="/src/pictures/spider-man.jpg" width="450" height="450">
             </div>
             <div class="item">
-              <img src="/src/pictures/plague-doctor.jpg" alt="" width="450" height="450">
-              <h4>Title</h4>
+              <img src="/src/pictures/hell.jpg" alt="" width="450" height="450">
             </div>
           </div>
       </div>
