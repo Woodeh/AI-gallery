@@ -118,6 +118,7 @@ nav .side-nav-panel {
   background-color: #000000;
   box-shadow: 1px 0 5px rgba(22, 24, 26, 0.5), 1px 0 3px rgba(7, 8, 10, 0.7);
   transition: 0.5s left;
+  
 }
 nav .top-nav {
   max-height: 50vh;
@@ -141,8 +142,10 @@ nav .top-nav .active a:visited {
 nav .top-nav a:hover,
 nav .top-nav a:active,
 nav .top-nav a:focus {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
+
+
 nav .top-nav > li {
   min-height: 50px;
   max-height: 100vh;
@@ -151,6 +154,10 @@ nav .top-nav > li {
   border-bottom-right-radius: 10px;
   letter-spacing: 1px;
   cursor: pointer;
+  font-size: 20px;
+  font-family: 'Cardo', serif;
+  line-height: 1.75;
+  transition: 0.4s;
 }
 nav .top-nav > li:hover, nav .top-nav > li:active, nav .top-nav > li:focus, nav .top-nav > li.active {
   background-color: #fcfcfc;
