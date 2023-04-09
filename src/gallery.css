@@ -1,8 +1,18 @@
 /* Gallery styling */
 .gallery {
-    padding-top: 80px;
+    padding-top: 2%;
   }
   
+.title {
+  padding-top: 90px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 2;
+}
+
   /* Grid layout */
   .row {
     display: flex;
@@ -56,6 +66,7 @@
     overflow: auto;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.9);
+    overflow: hidden;
   }
   
   .modal-content {
@@ -63,6 +74,8 @@
     display: block;
     width: 80%;
     max-width: 700px;
+    position: relative; /* добавить это свойство */
+    z-index: 1; /* добавить это свойство */
   }
   
   /* Caption text */
@@ -87,13 +100,13 @@
     
     /* Close button */
     .close {
-    position: absolute;
-    top: 100px;
-    right: 520px;
-    font-size: 35px;
-    font-weight: bold;
-    color: #f1f1f1;
-    transition: 0.3s;
+      position: absolute;
+      right: -60px;
+      font-size: 35px;
+      font-weight: bold;
+      color: #f1f1f1;
+      transition: 0.3s;
+      z-index: 2; /* добавить это свойство */
     }
     
     .close:hover,
@@ -119,11 +132,12 @@
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
+    z-index: 2;
     }
     
     /* Position the "next button" to the right */
     .next {
-    right: 508px;
+    right: -68px;
     border-radius: 3px 0 0 3px;
     }
     
@@ -164,3 +178,35 @@
     .mySlides {
     display: none;
     }
+
+
+
+
+
+    .column {
+      --c: rgb(119 34 34);
+      /* the border color */
+      --b: 4px;
+      /* the border thickness*/
+      --g: 0px;
+      /* the gap on hover */
+      
+      height: auto;
+      padding: var(--b) var(--b) 0;
+      --_g: #0000 25%, var(--c) 0;
+      background:
+        conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
+        conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0 var(--_i, 200%)/var(--_i, var(--b)) 200% no-repeat;
+      transition: .2s, background-position .2s .2s;
+      cursor: pointer;
+    }
+    .column:hover {
+      --_i: 100%;
+      transition: .2s, background-size .2s .2s;
+      transform: scale(1.1);
+    }
+
+
+
+
+    

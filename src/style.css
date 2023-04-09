@@ -10,6 +10,17 @@
     text-align: center;
   }
 
+  .top-nav {
+    font-family: 'Cardo', serif;
+    font-size: 20px;
+    line-height: 1.75;
+  }
+
+  .profile-info p {
+    font-family: 'Cardo', serif;
+    font-size: 15px;
+  }
+
   .grid {
     display: flex;
     justify-content: center;

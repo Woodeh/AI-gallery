@@ -15,9 +15,9 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  height: 50px;
+  height: 65px;
   padding: 0 24px;
-  background-color: #bdbdbd;
+  background-color: rgb(119 34 34);;
   color: #fefefe;
   position: fixed;
   opacity: 0.9;
@@ -30,8 +30,12 @@ header > * {
 }
 header .header-logo {
   text-align: center;
+ 
 }
 
+.header-logo img {
+  width: 50px;
+}
 
 
 nav {
@@ -57,7 +61,7 @@ nav input[name=toggle-nav]:hover:checked + label[for=toggle-nav] .menu-icon::bef
 nav input[name=toggle-nav]:hover:checked + label[for=toggle-nav] .menu-icon::after, nav input[name=toggle-nav]:active:checked + label[for=toggle-nav] .menu-icon::before,
 nav input[name=toggle-nav]:active:checked + label[for=toggle-nav] .menu-icon::after, nav input[name=toggle-nav]:focus:checked + label[for=toggle-nav] .menu-icon::before,
 nav input[name=toggle-nav]:focus:checked + label[for=toggle-nav] .menu-icon::after {
-  background-color: #fb8500;
+  background-color: rgb(119 34 34);;
 }
 nav label[for=toggle-nav] {
   display: flex;
@@ -111,7 +115,7 @@ nav .side-nav-panel {
   max-width: 380px;
   height: 100vh;
   padding-top: 85px;
-  background-color: #023047;
+  background-color: #000000;
   box-shadow: 1px 0 5px rgba(22, 24, 26, 0.5), 1px 0 3px rgba(7, 8, 10, 0.7);
   transition: 0.5s left;
 }
@@ -128,6 +132,7 @@ nav .top-nav a:link,
 nav .top-nav a:visited {
   color: #fcfcfc;
   text-decoration: none;
+  text-align: start;
 }
 nav .top-nav .active a:link,
 nav .top-nav .active a:visited {
@@ -161,7 +166,7 @@ nav .top-nav > li a {
   display: block;
   width: 100%;
   height: 100%;
-  padding-left: 2em;
+  padding-left: 36px;
 }
 nav .top-nav > li > a {
   padding-top: 15px;
@@ -364,7 +369,7 @@ body.dark-mode input[name=toggle-nav]:active:checked + label[for=toggle-nav] .me
 body.dark-mode input[name=toggle-nav]:active:checked + label[for=toggle-nav] .menu-icon::after,
 body.dark-mode input[name=toggle-nav]:focus:checked + label[for=toggle-nav] .menu-icon::before,
 body.dark-mode input[name=toggle-nav]:focus:checked + label[for=toggle-nav] .menu-icon::after {
-  background-color: #219ebc;
+  background-color: rgb(119 34 34);;
 }
 body.dark-mode .top-nav .active a:link,
 body.dark-mode .top-nav .active a:visited {
@@ -372,7 +377,7 @@ body.dark-mode .top-nav .active a:visited {
 }
 body.dark-mode .top-nav > li:hover, body.dark-mode .top-nav > li:active, body.dark-mode .top-nav > li:focus, body.dark-mode .top-nav > li.active {
   color: #fcfcfc;
-  background-color: #023047;
+  background-color: rgb(119 34 34);;
 }
 body.dark-mode .top-nav > li:hover a:link,
 body.dark-mode .top-nav > li:hover a:visited, body.dark-mode .top-nav > li:active a:link,
@@ -382,10 +387,10 @@ body.dark-mode .top-nav > li.active a:visited {
   color: #fcfcfc;
 }
 body.dark-mode .submenu {
-  background-color: #023047;
+  background-color: rgb(119 34 34);;
 }
 body.dark-mode .submenu li {
-  background-color: #023047;
+  background-color: rgb(119 34 34);;
 }
 body.dark-mode .submenu li::before {
   color: #fcfcfc;
