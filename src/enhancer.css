@@ -13,10 +13,11 @@
     background-size: cover;
     overflow: hidden;
     margin: auto;
-    top: 0;
+    top: 160px;
     bottom: 0;
     left: 0;
     right: 0;
+    transform: scale(0.8);
   }
   
   .mask-container {
@@ -26,6 +27,7 @@
     height: 100%;
     width: 50%;
     overflow: hidden;
+    
   }
   
   .mask-image-container {
@@ -37,6 +39,7 @@
     background-image: url(/src/pictures/ai-results2.png);
     background-position: center center;
     background-size: cover;
+    
   }
   
   .border {

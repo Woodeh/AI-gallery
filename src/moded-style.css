@@ -16,7 +16,6 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 65px;
-  padding: 0 24px;
   background-color: rgb(119 34 34);;
   color: #fefefe;
   position: fixed;
@@ -50,6 +49,7 @@ nav label[for=toggle-nav] {
   top: -20px;
   width: 35px;
   height: 35px;
+  margin-left: 24px;
 }
 nav input[name=toggle-nav] {
   display: block;
