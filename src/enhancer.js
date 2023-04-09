@@ -5,16 +5,25 @@ let maskImageContainer = document.querySelector(".mask-image-container");
 let border = document.querySelector(".border");
 let circle = document.querySelector(".circle");
 
-circle.style.draggable = true;
+let isDragging = false;
+let startPosition = 0;
+let delta = 0;
 
-circle.ondrag = function (event) {
-  maskContainer.style.width = event.pageX + "px";
-  border.style.left = event.pageX + "px";
-  circle.style.left = event.pageX + "px";
-};
+circle.addEventListener("mousedown", function (event) {
+  isDragging = true;
+  startPosition = event.pageX;
+});
 
-circle.ondragend = function (event) {
-  maskContainer.style.width = event.pageX + "px";
-  border.style.left = event.pageX + "px";
-  circle.style.left = event.pageX + "px";
-};
+document.addEventListener("mousemove", function (event) {
+  if (isDragging) {
+    delta = event.pageX - startPosition;
+    maskContainer.style.width = parseInt(getComputedStyle(maskContainer).width) + delta + "px";
+    border.style.left = parseInt(getComputedStyle(border).left) + delta + "px";
+    circle.style.left = parseInt(getComputedStyle(circle).left) + delta + "px";
+    startPosition = event.pageX;
+  }
+});
+
+document.addEventListener("mouseup", function (event) {
+  isDragging = false;
+});
