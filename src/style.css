@@ -98,3 +98,18 @@
     object-fit: contain;
     cursor: zoom-out;
   }
+
+
+@media screen and (max-width: 500px) {
+  
+
+  .slider:nth-child(2), .slider:nth-child(3) {
+    display: none;
+  }
+
+  .slider img {
+    width: 350px;
+    height: 350px;
+  }
+}
+
