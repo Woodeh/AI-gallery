@@ -34,7 +34,7 @@
   }
   
   /* Responsive layout */
-  @media screen and (max-width: 800px) {
+  /* @media screen and (max-width: 800px) {
     .column {
       flex: 50%;
       max-width: 50%;
@@ -47,7 +47,7 @@
       max-width: 100%;
     }
   }
-  
+   */
   /* Add shadows to images on hover */
   .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -209,4 +209,26 @@
 
 
 
-    
+    @media screen and (max-width: 500px) {
+     .column img {
+        height: 100px;
+        width: 100px;
+      }
+
+      .title {
+        font-size: 18px;
+      }
+
+      .mySlides img {
+        width: 300px;
+    height: 300px;
+      }
+
+      .close {
+        position:static;
+      }
+
+      .next {
+        position: static;
+      }
+    }
